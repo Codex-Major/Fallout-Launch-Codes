@@ -30,7 +30,6 @@ anagrams=[]
 with open(dict_file,'r') as fin:
     for word in fin.readlines():
         word=word.replace('\n','')
-        #print(word)
         mc=0
         for k, v in new_code_pairs.items():
             if k in word:
@@ -48,7 +47,6 @@ for word in anagrams:
         new_code = new_code+f"{char}{i} "
         digi_code = digi_code+f"{i}"
     print(f"[+] POSSIBILITY {pc}:\n{word}\n{new_code}\n{digi_code}\n")
-
 print("""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠤⠴⠾⠋⠉⠛⢾⡏⠙⠿⠦⠤⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⢶⣿⠉⢀⣀⡠⠆⠀⠀⠀⠀⠀⠀⠀⢤⣀⣀⠈⢹⣦⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠁⢋⡙⠁⠀⡝⠀⠀⠀⠀⣀⡸⠋⠁⠀⠀⠹⡀⠀⠈⠈⠆⢹⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
