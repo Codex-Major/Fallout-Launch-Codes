@@ -16,9 +16,6 @@ for y in key:
     r_alpha=r_alpha.replace(y,'')
 r_alpha = key+r_alpha
 
-print(r_alpha)
-print(alpha)
-
 print(f"[*] DECRYPTED CODE PAIRS:")
 new_code_pairs={}
 for k, v in code_pairs.items():
