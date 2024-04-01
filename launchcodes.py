@@ -23,7 +23,6 @@ for k, v in code_pairs.items():
         if z == k:
             print(f"[+] {alpha[r_alpha.index(z)]}{v}")
             new_code_pairs[alpha[r_alpha.index(z)]] = v
-
 print("\n")
 
 print("[*] ANAGRAM DETECTION: ")
